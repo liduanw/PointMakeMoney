@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_point_youmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector_pointlist_button"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="有米积分赚取通道"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/tv_point_domob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector_pointlist_button"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="多盟积分赚取通道"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/tv_point_waps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector_pointlist_button"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="万普积分赚取通道"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/tv_point_guomob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector_pointlist_button"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="果盟积分赚取通道"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_large"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_point_mobsmar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector_pointlist_button"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="指盟积分赚取通道"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_large"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_point_yijifen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector_pointlist_button"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="易积分积分赚取通道"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_large"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_point_dianjoy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector_pointlist_button"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="点乐积分赚取通道"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/tv_point_diancai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector_pointlist_button"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="点财积分赚取通道"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/tv_point_beiduo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector_pointlist_button"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="贝多积分赚取通道"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_large" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

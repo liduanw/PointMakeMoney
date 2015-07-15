@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/m" >
+
+    <include
+        android:id="@+id/layout_nav_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" >
+
+        <RelativeLayout
+            android:id="@+id/layout_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/base_edit_input" >
+
+            <TextView
+                android:id="@+id/tv_icon_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_user" />
+
+            <EditText
+                android:id="@+id/et_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_icon_phone"
+                android:background="@null"
+                android:hint="登录手机号码"
+                android:inputType="number"
+                android:padding="16dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_edittext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_edittext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/base_edit_input" >
+
+            <TextView
+                android:id="@+id/tv_icon_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_password" />
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_icon_pwd"
+                android:background="@null"
+                android:hint="登录密码"
+                android:inputType="textPassword"
+                android:padding="16dp" />
+
+            <CheckBox
+                android:id="@+id/cb_showpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_showorhidepwd"
+                android:button="@null"
+                android:padding="4dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_edittext2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <CheckBox
+                android:id="@+id/cb_remember_autologin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:checked="true"
+                android:text="自动登录"
+                android:textColor="@color/text_white" />
+
+            <CheckBox
+                android:id="@+id/cb_remember_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:checked="true"
+                android:text="记住密码"
+                android:textColor="@color/text_white" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_login_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_checkbox"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/selector_base_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="登录"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/tv_reg_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tv_login_submit"
+            android:clickable="true"
+            android:padding="20dp"
+            android:text="@string/reg"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/tv_resetpwd_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_login_submit"
+            android:clickable="true"
+            android:padding="20dp"
+            android:text="@string/forgot_pwd"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+</RelativeLayout>

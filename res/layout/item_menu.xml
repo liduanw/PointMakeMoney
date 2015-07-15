@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pwyql.pointmakemoney.view.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/selector_pointlist_button" >
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        layout="@layout/layout_top"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_icon"
+        android:layout_centerHorizontal="true"
+        android:text="xxxxxxxx"
+        android:textColor="@color/text_white" />
+
+</com.pwyql.pointmakemoney.view.SquareLayout>

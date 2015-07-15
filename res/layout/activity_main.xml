@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/layout_nav_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_top" />
+
+    <LinearLayout
+        android:id="@+id/layout_main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/btn_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/text_white"
+                android:drawableTop="@drawable/selector_personal_button"
+                android:onClick="onTabSelect"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="@string/myinfo"
+                android:textColor="@drawable/tab_textcolor"
+                android:textSize="@dimen/text_size_medium" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/text_white"
+                android:drawableTop="@drawable/selector_points_button"
+                android:onClick="onTabSelect"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="@string/tasks"
+                android:textColor="@drawable/tab_textcolor"
+                android:textSize="@dimen/text_size_medium" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_03"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/text_white"
+                android:drawableTop="@drawable/selector_settings_button"
+                android:onClick="onTabSelect"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="@string/ranking"
+                android:textColor="@drawable/tab_textcolor"
+                android:textSize="@dimen/text_size_medium" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_04"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/text_white"
+                android:drawableTop="@drawable/selector_mall_button"
+                android:onClick="onTabSelect"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="@string/mall"
+                android:textColor="@drawable/tab_textcolor"
+                android:textSize="@dimen/text_size_medium" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_main_bottom"
+        android:layout_below="@id/layout_nav_top" />
+
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_settings_item"
+            android:padding="20dp" >
+
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv_share"
+                android:text="邀请好友赚更多积分"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_notices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_settings_item"
+            android:padding="20dp" >
+
+            <ImageView
+                android:id="@+id/iv_notices"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv_notices"
+                android:text="系统公告"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_checkupdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_settings_item"
+            android:padding="20dp" >
+
+            <ImageView
+                android:id="@+id/iv_checkupdate"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv_checkupdate"
+                android:text="检查版本更新"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_settings_item"
+            android:padding="20dp" >
+
+            <ImageView
+                android:id="@+id/iv_help"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv_help"
+                android:text="寻求帮助"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_settings_item"
+            android:padding="20dp" >
+
+            <ImageView
+                android:id="@+id/iv_about"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv_about"
+                android:text="关于"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_settings_item"
+            android:padding="20dp" >
+
+            <ImageView
+                android:id="@+id/iv_logout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv_logout"
+                android:text="退出当前帐号"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

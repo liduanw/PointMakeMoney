@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="180dip"
+        android:background="@color/dialog_color_title"
+        android:minHeight="180dip" >
+
+        <TextView
+            android:id="@+id/tv_currentmoney_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="当前收入"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_large" />
+
+        <RelativeLayout
+            android:id="@+id/layout_current_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:id="@+id/tv_current_points_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="当前积分:"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/tv_current_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_current_points_label"
+                android:text="25152552"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_22" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2dp" >
+
+            <TextView
+                android:id="@+id/tv_current_invitecode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="xxxxxxxxxxxx"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_22" />
+
+            <TextView
+                android:id="@+id/tv_current_invitecode_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:layout_toLeftOf="@id/tv_current_invitecode"
+                android:text="邀请码:"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_RMB_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_currentmoney_label"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="50dp"
+            android:text="￥"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_22" />
+
+        <TextView
+            android:id="@+id/tv_currentmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_currentmoney_label"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_RMB_symbol"
+            android:text="52.13"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_larger" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/top" >
+
+        <GridView
+            android:id="@+id/gv_menus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="3" >
+        </GridView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/top"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/layout_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_pointlist_button"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/tv_baseinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:padding="40dip"
+                    android:text="@string/baseinfo"
+                    android:textColor="@color/base_color_text_white"
+                    android:textSize="@dimen/text_size_medium" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_pointlist_button"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/tv_baseinfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:padding="40dip"
+                    android:text="收入明细"
+                    android:textColor="@color/base_color_text_white"
+                    android:textSize="@dimen/text_size_medium" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_pointlist_button"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/tv_baseinfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:padding="40dip"
+                    android:text="提兑记录"
+                    android:textColor="@color/base_color_text_white"
+                    android:textSize="@dimen/text_size_medium" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/layout_telfare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_pointlist_button"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/tv_baseinfo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:padding="40dip"
+                    android:text="话费充值"
+                    android:textColor="@color/base_color_text_white"
+                    android:textSize="@dimen/text_size_medium" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_q"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_pointlist_button"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/tv_baseinfo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:padding="40dip"
+                    android:text="Q币充值"
+                    android:textColor="@color/base_color_text_white"
+                    android:textSize="@dimen/text_size_medium" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_pointlist_button"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/tv_baseinfo6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:padding="40dip"
+                    android:text="支付宝充值"
+                    android:textColor="@color/base_color_text_white"
+                    android:textSize="@dimen/text_size_medium" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_pointlist_button"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/tv_baseinfo7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:padding="40dip"
+                    android:text="财付通充值"
+                    android:textColor="@color/base_color_text_white"
+                    android:textSize="@dimen/text_size_medium" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_pointlist_button"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/tv_baseinfo7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="40dip"
+                    android:text="财富排行榜"
+                    android:textColor="@color/base_color_text_white"
+                    android:textSize="@dimen/text_size_medium" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_resetcashpwd_enter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_pointlist_button"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/tv_baseinfo9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="40dip"
+                    android:text="忘记提现密码?"
+                    android:textColor="@color/base_color_text_white"
+                    android:textSize="@dimen/text_size_medium" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

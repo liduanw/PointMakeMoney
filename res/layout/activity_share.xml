@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/layout_nav_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_nav_top"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="邀请其他好友注册: 好友使用您的邀请码成功注册后即可双方各奖励1元. "
+        android:textColor="@color/base_color_text_black"
+        android:textSize="@dimen/text_size_large" />
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/selector_base_button"
+        android:padding="10dp"
+        android:text="邀请好友获取更多积分"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_size_large" />
+
+    <RelativeLayout
+        android:id="@+id/layout_screenshot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <RelativeLayout
+            android:id="@+id/layout_invitecode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" >
+
+            <TextView
+                android:id="@+id/tv_invitecode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您的邀请码"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/tv_copy_invitecode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_invitecode"
+                android:background="@drawable/selector_pointlist_button"
+                android:padding="2dp"
+                android:text="(点击复制)"
+                android:textSize="@dimen/text_size_16"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_share_instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_invitecode"
+            android:background="@drawable/share_instr"
+            android:textSize="@dimen/text_size_22" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_share"
+        android:layout_margin="5dp"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/et_share_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/base_edit_input"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
