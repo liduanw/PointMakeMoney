@@ -467,7 +467,7 @@ public class MainActivity extends BaseActivity {
 	menu = new SlidingMenu(this);
 	menu.setMode(SlidingMenu.LEFT);
 	// 设置触摸屏幕的模式
-	menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+	menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN); // 边界滑动, 全屏滑动TOUCHMODE_FULLSCREEN
 	menu.setShadowWidthRes(R.dimen.shadow_width);
 	menu.setShadowDrawable(R.drawable.icon); // shadow
 	// 设置滑动菜单视图的宽度

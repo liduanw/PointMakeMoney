@@ -13,11 +13,12 @@ public class CustomViewPager extends android.support.v4.view.ViewPager {
 	super(context, attrs);
     }
     
-    @Override
-    public boolean onInterceptTouchEvent(MotionEvent arg0) {
-        // TODO Auto-generated method stub
-        return false;//super.onInterceptTouchEvent(arg0);
-    }
+    // 禁止滑动切换
+//    @Override
+//    public boolean onInterceptTouchEvent(MotionEvent arg0) {
+//        // TODO Auto-generated method stub
+//        return false;//super.onInterceptTouchEvent(arg0);
+//    }
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
@@ -32,10 +33,10 @@ public class CustomViewPager extends android.support.v4.view.ViewPager {
 //        return false;//super.canScroll(arg0, arg1, arg2, arg3, arg4);
 //    }
     
-    @Override
-    public boolean onTouchEvent(MotionEvent arg0) {
-        // TODO Auto-generated method stub
-        return false;//super.onTouchEvent(arg0);
-    }
+//    @Override
+//    public boolean onTouchEvent(MotionEvent arg0) {
+//        // TODO Auto-generated method stub
+//        return false;//super.onTouchEvent(arg0);
+//    }
 
 }
